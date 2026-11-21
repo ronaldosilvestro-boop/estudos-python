@@ -1,0 +1,27 @@
+[project]
+name = "estudos-python"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Ronaldo Silvestro Guero", email = "ronaldo.silvestro@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "pandas>=3.1.1",
+    "requests>=2.34.2",
+]
+
+[project.scripts]
+estudos-python = "estudos_python:main"
+
+[build-system]
+requires = ["uv_build>=0.13.9,<0.14.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.4.0",
+    "pytest>=9.2.0",
+    "ruff>=0.17.6",
+]
